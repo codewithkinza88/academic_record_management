@@ -76,7 +76,7 @@ double Subject::getGradePoints() const {
 
 // Display subject details
 void Subject::display() const {
-    cout << left << setw(20) << subjectName
-         << setw(10) << (to_string(marksObtained) + "/" + to_string(totalMarks))
-         << setw(5) << calculateGrade() << endl;
+    cout << left << setw(20) << subjectName;
+    cout << setw(10) << (to_string(marksObtained) + "/" + to_string(totalMarks));
+    cout << setw(5) << calculateGrade() << endl;
 }
